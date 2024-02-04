@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abhishek's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff1f87, #ff8ecc);
+            color: white;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+
+        .title-bar {
+            background: #ff1f87;
+            padding: 10px;
+            text-align: center;
+            height: 60px; /* Fixed height */
+        }
+
+        .animated-background {
+            animation: colorChange 5s infinite alternate;
+            display: inline-block; /* Prevents line break causing flickering */
+        }
+
+        @keyframes colorChange {
+            from {
+                background: #ff1f87;
+            }
+
+            to {
+                background: #ff8ecc;
+            }
+        }
+
+        .project-section {
+            background: pink;
+            padding: 20px;
+            margin-top: 20px;
+            min-height: 400px; /* Fixed min-height */
+        }
+
+        .project-title {
+            margin-bottom: 10px;
+        }
+
+        .resume-section a {
+            color: white; /* Set link color to match the text color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="title-bar">
+            <h1 class="animated-background" id="typed-text"></h1>
+        </div>
+
+        <div class="project-section">
+            <h2>Projects</h2>
+            <div class="powerbi-container">
+                <div class="project-title">IPL Data Analysis</div>
+                <iframe title="IPL Data Analysis" width="100%" height="400" src="https://app.powerbi.com/reportEmbed?reportId=f55e8e81-66a0-42d3-90b9-62abd53518e4&autoAuth=true&ctid=2488691f-3ab3-4522-a311-751d8cc8ebd5" frameborder="0" allowFullScreen="true"></iframe>
+
+                <div class="project-title">ISRO Moon Mission 2023</div>
+                <iframe title="MoonBI" width="100%" height="400" src="https://app.powerbi.com/reportEmbed?reportId=0c99ea9a-61c4-4b29-9a07-665e8c50a765&autoAuth=true&ctid=2488691f-3ab3-4522-a311-751d8cc8ebd5" frameborder="0" allowFullScreen="true"></iframe>
+
+                <div class="project-title">Hospitality Management System</div>
+                <iframe title="Revenue Insights in Hospitality Domain" width="100%" height="400" src="https://app.powerbi.com/reportEmbed?reportId=f168427e-fe75-4c6d-9548-c61bfde73d7a&autoAuth=true&ctid=2488691f-3ab3-4522-a311-751d8cc8ebd5" frameborder="0" allowFullScreen="true"></iframe>
+
+                <div class="project-title">HR Analytics</div>
+                <iframe title="HR Analytics Atliq" width="100%" height="400" src="https://app.powerbi.com/reportEmbed?reportId=8ca26dcf-c876-4839-adc1-18c572d70bd4&autoAuth=true&ctid=2488691f-3ab3-4522-a311-751d8cc8ebd5" frameborder="0" allowFullScreen="true"></iframe>
+              
+
+                <div class="project-title">Business 360</div>
+              <iframe title="Business 360" width="100%" height="400" src="https://app.powerbi.com/reportEmbed?reportId=46cfc880-630f-4205-b4b3-bff6be77f4cc&autoAuth=true&ctid=2488691f-3ab3-4522-a311-751d8cc8ebd5" frameborder="0" allowFullScreen="true"></iframe>
+
+
+
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>My Resume</h2>
+            <p>Name: Abhishek</p>
+            <p>Phone number: 8218466898</p>
+            <p>Email: ajoshi1_be21@thapar.edu</p>
+            <p><a href="https://drive.google.com/drive/search?q=resume" target="_blank">Download Resume</a></p>
+            <p><a href="https://www.linkedin.com/in/abhishek-joshi-050b33280/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+
+        <div class="comments-section">
+            <p>Thank you to all viewers! Comment below.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var options = {
+            strings: ["I am Abhishek "],
+            typeSpeed: 50,
+            loop: true,
+        };
+
+        var typed = new Typed("#typed-text", options);
+    </script>
+</body>
+
+</html>
+``
+
